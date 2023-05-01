@@ -52,21 +52,47 @@ public class LoopEx {
 	public void ex5() {
 		
 		// 정수 5개를 입력 받아서 합계 구하기 
+		// 스캐너 
+		// 합계 
 		
 		Scanner sc = new Scanner(System.in);
+		int sum =0;
 		
-		for(int i =1 ; i <=5 ;i++) {
+		for(int i =1 ; i <=5 ; i ++) {
 			
-			System.out.println("입력 : ");
-			int num = sc.nextInt();
-			int sum =0;
+			System.out.print("입력"+i+":");
+			int input =sc.nextInt();
+			sum += input; //sum+input = sum
 			
-			System.out.println(sum);
+			System.out.print(sum);
 		}
+		
+	
+	}
+		
+	public void ex6() {
+		
+		int count =0;
+		int sum =0;
+		
+		for(int i=1 ; i<= 20 ; i++) {
 			
-			
+			if(i%3==0) {
+				System.out.print(i+" ");
+				count++;
+				sum+=i;
+			}
 		}
+		System.out.println(":"+count+"개");
+		System.out.print("3의 배수의 합계 : "+sum);
+		
 		
 	}
+}
+		
+
+
+		
+
 
 
