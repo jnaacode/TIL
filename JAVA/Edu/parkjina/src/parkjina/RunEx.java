@@ -54,6 +54,7 @@ public class RunEx {
 //		arrSt.ex19();
 //		arrSt.ex20();
 //		arrSt.ex20();
+//		arrSt.ex21();
 //		arrSt.ex99	();
 		
 	
@@ -61,7 +62,12 @@ public class RunEx {
 		
 		LoopEx loEx = new LoopEx() ;
 		
-		loEx.ex6();
+//		loEx.ex6();
+//		loEx.ex7();
+		
+		Study std = new Study();
+//		std.ex1();
+		std.ex2();
 		
 		
 		

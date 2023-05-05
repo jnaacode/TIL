@@ -519,7 +519,33 @@ public class ArraryStudy1 {
 			System.out.println();//줄바꿈
 		}
 	}
+	
+	public void ex21(){
+		
+		int [] arr = {100,200,300,400,500,600,700,800,900,1000};
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수 입력 :" );
+		int input = sc.nextInt();
+		boolean flag = true;
+		
+		for(int i = 0;i<arr.length;i++) {
+			if(input==arr[i]) {
+				System.out.print(i+"번째 인덱스에 존재");
+				flag = false;
+			}
+		}
+		if(flag) {
+			System.out.print("존재하지 않습니다.");
+		}
+	}
+	
+		
+		
+		
 }
+	
+
 	
 
 

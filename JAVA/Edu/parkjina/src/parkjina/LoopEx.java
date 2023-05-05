@@ -85,9 +85,22 @@ public class LoopEx {
 		}
 		System.out.println(":"+count+"개");
 		System.out.print("3의 배수의 합계 : "+sum);
+	}
+	
+	public void ex7() {
+		
+		for(int i = 1; i<=4;i++) {
+			
+			for(int x =1 ;x<=i;x++) {
+				System.out.print(x);
+			}
+			System.out.println();
+		}
 		
 		
 	}
+	
+	
 }
 		
 

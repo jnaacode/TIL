@@ -40,6 +40,12 @@ public class ParkJinaEx1 {
 	
 		
 		}
+	int num = 30;
+	String str1 = "num은 30보다 큰수이다.";
+	String str2 = "num은 30이하의 수다.";
+	
+	String result = num > 30? str1 :str2;
+	
 
 			
 	}

@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class PakrJineEx2 {
 	
+	private static final int x = 0;
+
 	public void ex1() {
 		
 		int a = 100;
@@ -252,9 +254,13 @@ public class PakrJineEx2 {
 				
 			}
 			System.out.println(result);
+
+
+		
 			
 		}
-				
+		
+		
 }
 		
 	
