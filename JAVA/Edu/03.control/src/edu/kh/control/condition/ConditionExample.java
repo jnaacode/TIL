@@ -8,7 +8,7 @@ class ConditionExample {
 	public void ex1() {
 		
 		// if문
-		// - 조건식이  tru 일때만 내부 코드 수행 
+		// - 조건식이  true 일때만 내부 코드 수행 
 		
 		/*
 		 * [작성법]
@@ -44,7 +44,7 @@ class ConditionExample {
 		
 		// if - else 문 
 		// 조건식 결과가 true이면 if문 수행 
-		// false이면  else구문 수행
+		// false이면  else구문 수행643 3 
 		
 		/*
 		 * [작성법]
@@ -188,7 +188,7 @@ class ConditionExample {
 			// 해당하는 계절이 없을 경우 " 해당하는 계절이 없습니다"출력 
 			
 			if (month > 2 && month < 6) {
-				season = "봄";
+			season = "봄";
 				
 			}else if(month > 5 && month <9 ) {
 				 season = "여름";

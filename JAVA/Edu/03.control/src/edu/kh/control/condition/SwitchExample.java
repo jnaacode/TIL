@@ -118,13 +118,80 @@ public class SwitchExample {
 			}
 		
 			System.out.print(season);
-			
-		
-					
 				
 		}
 		
-		
+		public void ex4() {
+			
+			//정수 2개와 연산자 (+ - * /)입력 받아서 결과를 출력
+			
+			// ex)
+			// 정수 1 입력 : 5
+			// 연산자 입력 : *
+			// 정수 2 입력 : 2
+			
+			// 계산 결과 5*2 =10
+			
+			Scanner sc = new Scanner(System.in)	;
+			
+			System.out.print("정수 1입력 :");
+			int num1 =sc.nextInt();
+			
+			System.out.print("연산자 입력:");
+			// sc.nextCahr();스캐너는 문자 하나(char)를 입력 받는 기능이 별도로 없다
+			String op =sc.next(); // 다음에 입력되는 한단어(String) 읽어오기 
+			
+			//          		  (char) 'a'   !=  (String)"a"
+			
+			System.out.print("정수 2 입력 :");
+			int num2 =sc.nextInt();
+			
+			// case에 작성되는 값은 switch 식의 결과값 자료형의 리터럴 표기법이다.
+			switch(op) {
+			
+			case "+" : System.out.printf("%d+%d =%d\n",num1,num2,num1+num2); break;//+에 ""표기한 이유는 switch(op)에 자료형이  String이다.
+			case "-" : System.out.printf("%d-%d =%d\n",num1,num2,num1-num2); break;//표기하기위해서는 " "로 작성해야한다. 
+			case "*" : System.out.printf("%d*%d =%d\n",num1,num2,num1*num2); break;
+			case "/" : 
+				
+				if(num2==0) { //오류가 발생되는 경우
+					System.out.println("0으로 나눌 수 없습니다.");
+				}else {
+					System.out.printf("%d/%d =%d\n",num1,num2,num1/num2);
+				}
+				 break;
+				
+			case "%" : System.out.printf("%d %% %d =%d\n",num1,num2,num1%num2); break; //%%두개작성해야한다.
+			
+			default :System.out.println("존재하지 않는 연산자 입니다.");break;
+			
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		}
 		
 }
 

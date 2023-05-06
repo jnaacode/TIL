@@ -6,10 +6,12 @@ public class ConditionRun {
 		
 		ConditionExample condition = new ConditionExample();
 		
-		//condition.ex10();
+		//condition.ex2();
 		
 		SwitchExample swithchEx = new SwitchExample();
+//		swithchEx.ex4();
 		swithchEx.ex2();
+		
 				
 		
 	}
