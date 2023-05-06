@@ -67,7 +67,17 @@ public class RunEx {
 		
 		Study std = new Study();
 //		std.ex1();
-		std.ex2();
+//		std.ex2();
+//		std.ex3();
+//		std.ex4();
+//		std.ex5();
+//		std.ex6();
+//		std.ex7();
+//		std.ex8();
+//		std.ex9();
+//		std.ex10();
+//		std.ex11();
+		std.ex12();
 		
 		
 		
