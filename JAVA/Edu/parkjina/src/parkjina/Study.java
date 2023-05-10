@@ -1,9 +1,13 @@
 package parkjina;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Study {
 	
+	private int i;
+
+
 	public void ex1() {
 		
 		Scanner sc = new Scanner(System.in);
@@ -220,10 +224,307 @@ public class Study {
 		
 		System.out.println("합계 :" + sum);
 		
-		
+	
 		
 	}
+
+	public void ex13() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double[] height = new double[3];
+		
+		for(int i =0; i <height.length;i++) {
+			
+			System.out.print((i+1)+"번 키 입력 : " );
+			
+			height[i]=sc.nextDouble();
+		}
+		double sum = 0;
+		System.out.print("입력받은키 : ");
+		
+		for(int i =0; i <height.length;i++) {
+			System.out.print(height[i]+ " ");
+			sum+=height[i];
+		}
+	
+		System.out.printf("\n평균 : %.2f\n",sum /height.length);
+		
+	}
+	
+	public void ex14() {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("입력받을 인원 수 ");
+		int input =sc.nextInt();
+		
+		int[] score = new int[4];
+		
+		int sum =0;
+		int avg=0;
+		
+		for(int i =0;i<score.length;i++) {
+			System.out.print((i+1)+"번 점수 입력 : ");
+			
+			score[i]=sc.nextInt();
+			sum+=score[i];
+		}
+		
+		int max = score[0];
+		int min = score[0];
+			for(int i =0 ;i <score.length ;i++) {
+			
+			if(score[i] > max) { //최고점 비교 
+					
+			}else if(score[i] < min) {//최저점 비교 
+				min = score[i];
+			}
+		}
+			System.out.println("\n합계 : "+sum);
+			System.out.printf("\n평균 : %.2f\n",sum/score.length);
+
+	}
+	
+	
+	public void ex15() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("1 이상의 숫자를 입력하세요 :");
+		int input = sc.nextInt(); 	
+		
+		if(input<1) {
+			System.out.print("1이상의 수자를 입력해주세요.");
+		}
+		
+		for(int i =input; i>=1;i--) {
+			
+			System.out.print(i+" ");
+	
+		}
+	}
+	
+	public void ex16() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int sum = 0;
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt(); 
+		
+		for(int i =1; i<=input;i++) {
+			
+			System.out.print(i+" ");
+	
+			sum+=i;
+			if(i<input) {
+				System.out.print("+"+" ");
+			}else {
+				System.out.print("=");
+			}
+	
+		}
+		System.out.print(sum);
+	}
+	
+	public void ex17() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int count =0;
+		
+		System.out.print("첫번째 숫자: ");
+		int input1 = sc.nextInt(); 
+		
+		System.out.print("두번째 숫자: ");
+		int input2 = sc.nextInt(); 
+		
+		if(input1<1 || input2<1) {
+			System.out.print("1이상의 숫자를 입력해주세요.");
+		}else if(input1<input2){
+			for(int i = input1;i<=input2;i++)
+			System.out.print(i+ " ");
+			
+		}else {
+			for(int i = input2;i<=input1;i++)
+			System.out.print(i+ " ");
+		}
+
+		
+	}
+	public void ex18() {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수 입력 : ");
+		int input = sc.nextInt();
+		
+		for(int x = 1; x <= input ; x++) {
+			for(int i = 1; i <= input; i++) {
+				if(i <= input - x) {
+					System.out.print(" ");
+				}else {
+					System.out.print("*");
+					
+				}
+			}
+			System.out.println(); // 줄바꿈
+		}
+	}
+	
+	
+	public void ex19() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int [] height = new int [5];
+		
+		for(int i =0;i<height.length;i++) {
+			System.out.print(i+1+"번 키 입력 : ");
+			height[i]=sc.nextInt();
+		}
+		System.out.println();{
+		
+			int sum =0;
+		System.out.println("입력 받은 키 :");
+		
+		for(int i =0;i<height.length ;i++) {
+		System.out.print(height[i]+" ");
+		
+		sum+= height[i]; //배열에 저장된 값을 sum에 누적한다. 
+		
+		}
+		System.out.printf("\n평균 : %.2f\n",sum /height.length);
+		}
+		
+	}
+	
+	public void ex20() {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("입력 받을 인원 수 ");
+		int input1= sc.nextInt();
+		
+		int[] arr = new int[input1];
+		
+		int sum =0;
+		
+		
+		for(int i =0;i<arr.length;i++) {
+			System.out.print((i+1)+"번 점수 입력 : " );
+			arr[i]=sc.nextInt();
+			
+			sum+=arr[i];
+			
+		}
+		System.out.println("합계 : "+sum);
+		System.out.print("평균 : "+sum/arr.length);
+	
+		int max = arr[0];
+		int min = arr[0];
+
+		for(int i =0;i<arr.length;i++) {
+			
+			if(arr[i]>max) {
+				max = arr[i];
+				
+			} else if( arr[i] < min ) { 
+				min = arr[i];
+			}
+		}
+		System.out.println("최고점 :"+max);
+		System.out.println("최저점 :"+min);
+	}
+
+	public void ex21() {
+		
+		int [] arr = {100,200,300,400,500,600,700,800,900,1000};
+		Scanner sc = new Scanner(System.in);
+		
+		boolean flag=true;
+		
+		System.out.print("정수 입력 : ");
+		int input =sc.nextInt();
+		
+		for(int i =0;i<arr.length;i++) {
+			if(input==arr[i]) {
+				System.out.println(i+"번째 인덱스에 존재");
+				flag = false;
+			}
+		}
+		 if(flag) {
+			 System.out.print("존재하지않음");
+		 }
+	}
+	
+	public void ex22() {
+		
+		String [] arr = {"사과","딸기","바나나","키워","멜론","아보카도"};
+		
+		Scanner sc= new Scanner(System.in);
+		System.out.print("과일입력 : ");
+		
+		int count =0;
+		
+		String input = sc.next();
+		
+		for(int i =0;i<arr.length;i++) {
+			if(input.equals(arr[i])) {
+				System.out.print((i+1)+"번째 인덱스에 존재");
+				count++;
+			}
+		}
+		if(count==0) {
+			System.out.print("존재하지않음");
+		}
+	}
+	
+	public void ex23() {
+		
+		int [] arr = {1,2,3,4,5};
+		
+		int [] copyArr=new int[arr.length];
+		for(int i =0;i<arr.length;i++) {
+			copyArr[i]=arr[i];
+		}
+		
+	}
+	
+	public void ex24() {
+		
+		int [] lotto = new int [6]; 
+		for(int i =0;i<lotto.length;i++) {
+			int random = (int)(Math.random()*45+1);
+			
+			lotto[i]=random;
+			
+			for(int x =0;x<i;x++) {
+				if(random==lotto[x]) {
+					i--;
+					break;
+				}
+			}
+		}
+		Arrays.sort(lotto);
+		System.out.print(Arrays.toString(lotto));
+	}
+	public void ex25() {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("두 정수를 입력 받아서 나누기 한 몫을 출력");
+		System.out.print("정수 1 입력 : ");
+		int input1 = sc.nextInt();
+
+		System.out.print("정수 2 입력 :");
+		int input2 = sc.nextInt();
+	}
 }
+
+	
+	
+	
+
+
+
 	
 	
 

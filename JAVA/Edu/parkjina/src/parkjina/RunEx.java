@@ -55,6 +55,9 @@ public class RunEx {
 //		arrSt.ex20();
 //		arrSt.ex20();
 //		arrSt.ex21();
+//		arrSt.ex22();
+//		arrSt.ex23();
+		arrSt.ex23();
 //		arrSt.ex99	();
 		
 	
@@ -77,7 +80,18 @@ public class RunEx {
 //		std.ex9();
 //		std.ex10();
 //		std.ex11();
-		std.ex12();
+//		std.ex12();
+//		std.ex13();
+//		std.ex14();
+//		std.ex15();
+//		std.ex16();
+//		std.ex17();
+//		std.ex18();
+//		std.ex19();
+//		std.ex20();
+//		std.ex21();
+//		std.ex22();
+//		std.ex24();
 		
 		
 		

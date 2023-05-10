@@ -539,11 +539,94 @@ public class ArraryStudy1 {
 			System.out.print("존재하지 않습니다.");
 		}
 	}
+	public void ex22() {
 	
+		//정수 5개를 입력 받아 배열을 초기화 하고
+		//	검색할 정수를 하나 입력 받아 배열에서 같은 수가 있는 인덱스를 찾아 출력.
+		//	배열에 같은 수가 없을 경우 “일치하는 값이 존재하지 않습니다“ 출력
+		Scanner sc = new Scanner(System.in);
 		
+		int[] arr = new int[5];
 		
+		for(int i=0;i <arr.length;i++) {
+			System.out.print("입력"+i+":");
+			arr[i]=sc.nextInt();
+		}
 		
+		System.out.print("검색할 값 : ");
+		int input = sc.nextInt();
+	
+		boolean flag = true;
+		
+		System.out.print("인덱스 : ");
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]==input) {
+				System.out.print(i+ " ");
+				flag = false;
+			}
+		}
+		 if(flag) {
+			 System.out.print("값이 존재하지 않습니다");
+			
+		}
+	}
+	public void ex23() {
+		
+		//문자열을 입력 받아 문자 하나하나를 배열에 넣고 
+		//검색할 문자가 문자열에 몇개 들어가 있는지 
+		//개수와 몇번째 인덱스에 위치하는지 인덱스를 출력하세요. 
+		
+		Scanner sc= new Scanner(System.in);
+		System.out.print("문자열 : ");
+		String input1 = sc.next();
+		
+		System.out.print("문자 :");
+		char input2 = sc.next().charAt(0);
+		char[]arr=new char[input1.length()];
+		
+		int count =0;
+		System.out.print(input1+"에"+input2+"가  존재하는 위치(인덱스) :");
+		for(int i =0;i<arr.length;i++) {
+			arr[i]=input1.charAt(i);
+			
+			if(input2 ==arr[i]) {
+				count++;
+				System.out.print(i+ " ");
+			}
+		}
+	}
+	public void ex24() {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("문자열 : ");
+		String input1 = sc.next();
+		
+		System.out.print("문자 :");
+		char input2 = sc.next().charAt(0);
+		
+		char [] arr= new char[input1.length()];
+		
+		int count =0;
+		
+		System.out.print(input1+"에"+input2+"가  존재하는 위치(인덱스) :");
+		for(int i =0;i<arr.length;i++) {
+			arr[i]=input1.charAt(i);
+			
+			if(arr[i]==input2) {
+				count++;
+				System.out.println(i+"개수");
+			}
+		}
+		
+	}
 }
+	
+	
+
+		
+		
+		
+
 	
 
 	

@@ -2,6 +2,7 @@ package oopex3run;
 
 import oopex1.Abstractior;
 import oopex1.MemberService;
+import oopex1.StudentService;
 
 public class AbstractiorRun {
 	
@@ -13,7 +14,11 @@ public class AbstractiorRun {
 		
 	MemberService service = new MemberService();
 	
-	service.displayMenu();
+//	service.displayMenu();
+	
+	StudentService std = new StudentService();
+	
+	std.displaymenu();
 	}
-
+	
 }
