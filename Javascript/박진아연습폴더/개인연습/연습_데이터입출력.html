@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../박진아연습폴더/연습_데이터입출력.js"></script>
+</head>
+<body>
+    <style>
+         .box {
+            border: 1px solid black;
+        }
+
+        #area1{
+            width: 520px;
+            height: 300px;
+            border: 1px solid black;
+            background-color: plum;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: cornflowerblue;
+            border: 4px solid greenyellow;
+            box-sizing: border-box;
+        }
+    </style>
+</body>
+</html><button onclick="fnAlert()">확인</button>
+
+<button onclick="documentWriter()">화면에 출력</button>
+
+<button onclick="getInnerText()">InnerText로 읽어오기</button>
+<button onclick="setInnerText()">InnerText로 읽어오기</button>
+
+<p id="test1" class="box">
+    테스트1입니다.
+    <br>
+    <b>안녕하세요 ? </b>
+</p>
+
+<button onclick="getInnerHTML1()">innerHTML로 읽어오기</button>
+<button onclick="setInnerHTML2()">innertHTML로 변경하기</button>
+
+<p id="test2" class="box">
+    테스트2입니다.
+    <br>
+    <b>안녕하세요 ? </b>
+</p>
+
+
+<br>
+<button onclick="add()">추가하기</button>
+<div id="area1">
+    <div class="box"></div>
+</div>
+
+
+
+<button id="confirmBtn" onclick="fnConfirm()">confirm 확인하기</button>
+
+<button onclick="fnPrompt1()">클릭</button>
+<div id="area2"></div>
+
+<br>
+
+아이디 : <input type="text" id="userId"> 
+비밀번호 : <input type="text" id="userPwd"> 
+
+<button onclick="fnInput()">클릭</button>
+<br>
+<input type="text" id="area4">
